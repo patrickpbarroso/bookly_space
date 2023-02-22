@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alura Space</title>
+    <title>Bookly Space</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,125 +16,53 @@
 <body>
     <div class="pagina-inicial">
         <header class="cabecalho">
-            <img src="{% static '/assets/logo/Logo(2).png' %}" alt="Logo da Alura Space" />
+            <img src="{% static '/assets/logo/Logo.png' %}" alt="Logo do Bookly Space" />
             <div class="cabecalho__busca">
                 <div class="busca__fundo">
                     <input class="busca__input" type="text" placeholder="O que você procura?">
-                    <img class="busca__icone" src="{% static '/assets/ícones/1x/search.png' %}" alt="ícone de search">
+                    <img class="busca__icone" src="{% static '/assets/ícones/1x/search(1).png' %}" alt="ícone de search">
                 </div>
             </div>
         </header>
         <main class="principal">
             <section class="menu-lateral">
                 <nav class="menu-lateral__navegacao">
-                    <a href="#"><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}"> Home</a>
-                    <a href="#"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"> Mais vistas</a>
-                    <a href="#"><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"> Novas</a>
-                    <a href="#"><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Surpreenda-me</a>
+                    <a href="#"><img src="{% static '/assets/ícones/1x/Home - ativo(1).png' %}"> Home</a>
+                    <a href="#"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo(1).png' %}"> Mais lidas</a>
+                    <a href="#"><img src="{% static '/assets/ícones/1x/Novas - inativo(1).png' %}"> Novidades</a>
+                    <a href="#"><img src="{% static '/assets/ícones/1x/Recomendacoes - inativo.png' %}"> Recomendações</a>
                 </nav>
             </section>
             <section class="conteudo">
                 <section class="banner">
-                    <img class="banner__imagem" src="{% static '/assets/imagens/Banner(2).png' %}" alt="banner Alura Space">
-                    <h1 class="banner__titulo"> A galeria mais completa de fotos do espaço!</h1>
+                    <img class="banner__imagem" src="{% static '/assets/imagens/Banner(1).png' %}" alt="banner Bookly Space">
+                    <h1 class="banner__titulo"> A biblioteca mais completa de resenhas da literatura mundial!</h1>
                 </section>
                 <section class="tags">
-                    <p class="tags__titulo">Busque por tags:</p>
+                    <p class="tags__titulo">Categorias:</p>
                     <ul class="tags__lista">
-                        <li class="tags__tag">Nebulosa</li>
-                        <li class="tags__tag">Estrela</li>
-                        <li class="tags__tag">Galáxia</li>
-                        <li class="tags__tag">Planeta</li>
+                        <li class="tags__tag">Clássicos</li>
+                        <li class="tags__tag">Filosofia</li>
+                        <li class="tags__tag">Ciência</li>
+                        <li class="tags__tag">Biografias</li>
+                        <li class="tags__tag">Fantasia</li>
+                        <li class="tags__tag">Romance</li>
+                        <li class="tags__tag">Terror</li>
                     </ul>
                 </section>
-                <section class="galeria">
+                <section class="biblioteca">
                     <div class="cards">
-                        <h2 class="cards__titulo">Navegue pela galeria</h2>
+                        <h2 class="cards__titulo">Navegue pelas nossas resenhas!</h2>
                         <ul class="cards__lista">
                             <li class="card">
-                                <a href="imagem.html">
-                                    <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
+                                <a href="{% url 'review' %}">
+                                    <img class="card__imagem" src="{% static '\assets\imagens\Anna.png' %}" alt="foto">
                                 </a>
-                                <span class="card__tag">Estrelas</span>
+                                <span class="card__tag">Clássicos</span>
                                 <div class="card__info">
-                                    <p class="card__titulo">Nome da foto</p>
+                                    <p class="card__titulo">Anna Karenina - Liév Tolstoi</p>
                                     <div class="card__texto">
-                                        <p class="card__descricao">Fonte/fotógrafo/satélite</p>
-                                        <span>
-                                            <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="card">
-                                <a href="imagem.html">
-                                    <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
-                                </a>
-                                <span class="card__tag">Estrelas</span>
-                                <div class="card__info">
-                                    <p class="card__titulo">Nome da foto</p>
-                                    <div class="card__texto">
-                                        <p class="card__descricao">Fonte/fotógrafo/satélite</p>
-                                        <span>
-                                            <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="card">
-                                <a href="imagem.html">
-                                    <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
-                                </a>
-                                <span class="card__tag">Estrelas</span>
-                                <div class="card__info">
-                                    <p class="card__titulo">Nome da foto</p>
-                                    <div class="card__texto">
-                                        <p class="card__descricao">Fonte/fotógrafo/satélite</p>
-                                        <span>
-                                            <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="card">
-                                <a href="imagem.html">
-                                    <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
-                                </a>
-                                <span class="card__tag">Estrelas</span>
-                                <div class="card__info">
-                                    <p class="card__titulo">Nome da foto</p>
-                                    <div class="card__texto">
-                                        <p class="card__descricao">Fonte/fotógrafo/satélite</p>
-                                        <span>
-                                            <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="card">
-                                <a href="imagem.html">
-                                    <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
-                                </a>
-                                <span class="card__tag">Estrelas</span>
-                                <div class="card__info">
-                                    <p class="card__titulo">Nome da foto</p>
-                                    <div class="card__texto">
-                                        <p class="card__descricao">Fonte/fotógrafo/satélite</p>
-                                        <span>
-                                            <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="card">
-                                <a href="imagem.html">
-                                    <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
-                                </a>
-                                <span class="card__tag">Estrelas</span>
-                                <div class="card__info">
-                                    <p class="card__titulo">Nome da foto</p>
-                                    <div class="card__texto">
-                                        <p class="card__descricao">Fonte/fotógrafo/satélite</p>
+                                        <p class="card__descricao">Romance russo do século XIX</p>
                                         <span>
                                             <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
                                         </span>
@@ -149,14 +77,14 @@
     </div>
     <footer class="rodape">
         <div class="rodape__icones">
-            <a href="https://twitter.com/AluraOnline" target=”_blank” >
+            <a href="https://twitter.com/Dllschr" target=”_blank” >
                 <img src="{% static '/assets/ícones/1x/twitter.png' %}" alt="ícone twitter">
             </a>
-            <a href="https://www.instagram.com/aluraonline/" target=”_blank” >
+            <a href="https://www.instagram.com/patrick.barroso/" target=”_blank” >
                 <img src="{% static '/assets/ícones/1x/instagram.png' %}" alt="ícone instagram">
             </a>
         </div>
-        <p class="rodape__texto">Desenvolvido por Alura</p>
+        <p class="rodape__texto">Desenvolvido por Patrick Barroso</p>
     </footer>
 </body>
 
