@@ -4,12 +4,12 @@
             <section class="conteudo">
                 <section class="imagem">
                     <div class="imagem__conteudo">
-                        <img class="banner__imagem" src="{% static '\assets\imagens\Anna.png' %}" alt="foto">
+                        <img class="banner__imagem" src="{% static '/assets/imagens/biblioteca/' %}{{ resenha.imagem }}" alt="imagem">
                         <div class="imagem__info">
                             <div class="imagem__texto">
-                                <p class="imagem__titulo">“Anna Kariênina” de Liévin Tolstói</p>
-                                <p class="imagem__descricao">22 de fevereiro de 2023</p>
-                                <p class="imagem__texto">Anna Kariênina, uma aristocrata casada, envolve-se em um caso extraconjugal com o conde Vrónski e experimenta as virtudes e as tristezas de um amor profundo, porém recheado de conflitos. Paralelamente, Liévin, aristocrata do campo, lida com a rejeição de seu pedido de casamento à sua mulher amada.</p>
+                                <p class="imagem__titulo"> {{resenha.titulo}} </p>
+                                <p class="imagem__descricao"> {{resenha.legenda}} </p>
+                                <p class="imagem__texto"> {{resenha.descricao}} </p>
                             </div>
                         </div>
                     </div>

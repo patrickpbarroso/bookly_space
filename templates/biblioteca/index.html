@@ -22,21 +22,27 @@
                     <div class="cards">
                         <h2 class="cards__titulo">Navegue pelas nossas resenhas!</h2>
                         <ul class="cards__lista">
+                            {% if cards %}
+                            {% for resenha in cards %}
                             <li class="card">
-                                <a href="{% url 'review' %}">
-                                    <img class="card__imagem" src="{% static '\assets\imagens\Anna.png' %}" alt="foto">
+                                <a href="{% url 'review' resenha.id %}">
+                                    <img class="card__imagem" src="{% static '/assets/imagens/biblioteca/' %}{{ resenha.imagem }}" alt="foto">
                                 </a>
-                                <span class="card__tag">Clássicos</span>
+                                <span class="card__tag">{{ resenha.categoria }}</span>
                                 <div class="card__info">
-                                    <p class="card__titulo">Anna Karenina - Liév Tolstoi</p>
+                                    <p class="card__titulo">{{ resenha.titulo }} </p>
+                                    <p class="card__autor">{{ resenha.autor}}</p>
                                     <div class="card__texto">
-                                        <p class="card__descricao">Romance russo do século XIX</p>
+                                        <p class="card__descricao">{{ resenha.legenda }}</p>
                                         <span>
                                             <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
                                         </span>
                                     </div>
                                 </div>
                             </li>
+                            {% endfor %}
+                            {% else %}
+                            {% endif %}
                         </ul>
                     </div>
                 </section>

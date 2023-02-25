@@ -149,6 +149,7 @@ table {
 
 .card__imagem {
     width: 450px;
+    height:320px;
     border-radius: 10px 10px 0 0;
 }
 
@@ -175,6 +176,13 @@ table {
     font-weight: bold;
     line-height: 1.2rem;
     margin-top: 0.8em;
+}
+
+.card__autor {
+    font-weight: bold;
+    font-size: 1.0rem;
+    line-height: 1.2rem;
+    margin-top: 0.3em;
 }
 
 .card__texto {

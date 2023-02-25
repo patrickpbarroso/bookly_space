@@ -4,5 +4,5 @@ from biblioteca.views import index, review
 
 urlpatterns = [
     path('', index, name='index'),
-    path('review/', review, name='review')
+    path('review/<int:resenha_id>', review, name='review')
 ]
