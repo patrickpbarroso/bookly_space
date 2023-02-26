@@ -1,0 +1,29 @@
+{% extends 'biblioteca/base.html' %}
+{% load static %}
+{% block content %}
+<section class="conteudo">
+
+        <div class="perfil__conteudo">
+                <div class="perfil__conteudo">
+                    <p class="perfil__titulo"> Perfil e Conta </p>
+                    <p class="perfil__subtitulo"> Foto de perfil </p>
+                        <img class="profile_pic" src="{% static 'assets/imagens/perfil/profile_pic.jpg' %}" alt="Profile pic">
+                    <p class="perfil__subtitulo"> Sobre mim </p>
+                        <p class="perfil__subsubtitulo"> Nome completo: </p>
+                            <p class="perfil__texto">Olivia Rosa de Castanhares</p>
+                        <p class="perfil__subsubtitulo"> Pseudônimo: </p>
+                            <p class="perfil__texto">Karenina Niena</p>
+                    <p class="perfil__subtitulo"> Informações de login </p>
+                        <p class="perfil__subsubtitulo"> Usuário: </p>
+                            <p class="perfil__texto">rosa.oliviac</p>
+                        <p class="perfil__subsubtitulo"> Senha: </p>
+                            <p class="perfil__texto">**********</p>
+                </div>
+        </div>
+        <P class="editar_dados_button">EDITAR INFORMAÇÕES</P>
+        <p class="apagar_conta_button">APAGAR CONTA</p>
+
+</section>
+</main>
+</div>
+{% endblock %}

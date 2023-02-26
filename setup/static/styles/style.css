@@ -82,6 +82,13 @@ table {
     margin: 1.5rem 0 4rem 0;
 }
 
+.lado__direito {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0 2rem 0;
+}
+
 .cabecalho__busca {
     align-items: center;
     border-radius: 10px;
@@ -102,6 +109,7 @@ table {
     width: 100%;
 }
 
+
 .busca__input {
     align-items: center;
     background-color: transparent;
@@ -117,8 +125,20 @@ table {
     width: 2rem;
     height: 2rem;
     height: 24px;
+    width: 24px;
     padding: 10px;
 }
+
+
+.perfil__icone {
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+}
+
 
 .cards {
     width: 100%;
@@ -392,4 +412,77 @@ table {
 .tags__tag:hover {
     border: 2px solid #FFFFFF;
     cursor: pointer;
+}
+
+.perfil__conteudo{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px 0 0;
+    width: 950px;
+}
+.perfil__titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.perfil__subtitulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #12AC87;
+    line-height: 3rem;
+    margin-bottom: 0rem;
+}
+
+.perfil__subsubtitulo {
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 3rem;
+    margin-bottom: -1.5rem;
+    text-indent: 30px;
+}
+
+.perfil__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #FFFFFF;
+    margin-top: 0rem;
+    font-size: 1rem;
+}
+
+.perfil__texto {
+    font-size: 1.0rem;
+    font-weight: lighter;
+    color: #FFFFFF;
+    line-height: 3rem;
+    margin-bottom: 0rem;
+    text-indent: 30px;
+}
+
+.profile_pic {
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    width: 250px;
+    height:250px;
+}
+
+.editar_dados_button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #30e430;
+    line-height: 3rem;
+    margin-bottom: 0rem;
+}
+
+.apagar_conta_button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6969;
+    line-height: 3rem;
+    margin-bottom: 0rem;
 }

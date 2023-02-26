@@ -2,12 +2,18 @@
 <div class="pagina-inicial">
     <header class="cabecalho">
         <img src="{% static '/assets/logo/Logo.png' %}" alt="Logo do Bookly Space" />
-        <div class="cabecalho__busca">
-            <div class="busca__fundo">
-                <input class="busca__input" type="text" placeholder="O que você procura?">
-                <img class="busca__icone" src="{% static '/assets/ícones/1x/search(1).png' %}" alt="ícone de search">
+        <div class="lado__direito">
+            <div class="cabecalho__busca">
+                <div class="busca__fundo">
+                    <input class="busca__input" type="text" placeholder="O que você procura?">
+                    <img class="busca__icone" src="{% static '/assets/ícones/1x/search(1).png' %}" alt="ícone de search">
+                </div>
+            </div>
+            <div>
+                <a href="{% url 'profile' %}" ><img class="perfil__icone" src="{% static '/assets/ícones/1x/Perfil.png' %}"></a>
             </div>
         </div>
+        
     </header>
     <main class="principal">
         <section class="menu-lateral">
