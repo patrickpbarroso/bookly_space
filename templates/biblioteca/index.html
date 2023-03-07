@@ -26,7 +26,11 @@
                             {% for resenha in cards %}
                             <li class="card">
                                 <a href="{% url 'review' resenha.id %}">
-                                    <img class="card__imagem" src="{% static '/assets/imagens/biblioteca/' %}{{ resenha.imagem }}" alt="foto">
+                                {% if resenha.imagem == '' or resenha.imagem == null %}
+                                    <img class="card__imagem" src="{% static '/assets/imagens/biblioteca/image-not-found.png' %}" alt="foto">
+                                {% else %}
+                                    <img class="card__imagem" src="{{ resenha.imagem.url }}" alt="foto">
+                                {%  endif %}
                                 </a>
                                 <span class="card__tag">{{ resenha.categoria }}</span>
                                 <div class="card__info">

@@ -23,6 +23,6 @@ class Resenha(models.Model):
     data_postagem = models.DateTimeField(default=datetime.now, blank=False)
 
     def __str__(self):
-        return f"Resenha [titulo={self.titulo}]"
+        return self.titulo
     
 
