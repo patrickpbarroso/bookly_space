@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -31,10 +32,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     background: linear-gradient(#1F1F1F,#333333,#474747);
-    background-repeat: no-repeat;
+    background-repeat:repeat;
     background-position: center;
     background-size: cover;
 }
@@ -68,7 +69,7 @@ table {
 .banner__titulo {
     color: #FFFFFF;
     font-size: 40px;
-    width: 350px;
+    width: 450px;
     line-height: 40px;
     position: absolute;
     top: 80px;
@@ -287,7 +288,7 @@ table {
 }
 
 .menu-lateral__navegacao a {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     align-items: center;
     display: flex;
     margin-bottom: 1.5rem;
